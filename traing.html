@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html dir="rtl">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge - chrome = 1.0'>
+    <title>المنصة التدريبية</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400..800&display=swap" rel="stylesheet">
+    <link rel="icon" href="Images/traing/icontraing.jpg"/>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <script src='main.js'></script>
+    <style>
+     *{
+        margin: 0;
+        padding: 0;
+        font-family: Baloo Bhaijaan 2", sans-serif;
+     }
+  
+
+.header a{
+    width: 20%;
+    height: 30px;
+    color: blue;
+    text-decoration: none;
+    font-size: 22px;
+    font-style: initial;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-right: 15px;
+    float: right;
+    margin-bottom: 10px;
+}
+.header nav{
+    width: 100%;
+    height: 85px;
+   background-color: #fff;
+    font-weight: bold;
+    box-shadow: 0px 0px 12px black;
+}
+.header nav button{
+    width: 140px;
+    padding: 10px;
+    margin-top: 20px;
+    color: blue;
+    border: none;
+    background: none;
+    outline: none;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 1s;
+    font-family: "Cairo", sans-serif;
+}
+.header nav button:hover
+    {
+    text-decoration: underline;
+}
+.content-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.image-container {
+    flex: 1;
+    max-width: 40%;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.text-container {
+    flex: 2;
+    padding: 10px;
+}
+
+.text-container h2 {
+    margin: 0 0 15px;
+    font-size: 34px;
+    color: blue;
+}
+
+.text-container p {
+    margin: 10px 0;
+    font-size: 20px;
+    color: blue;
+    line-height: 1.6;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.title{
+    color: blue;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+    text-decoration: underline;
+}
+
+.card {
+    background-color: #fff;
+    width: 21.25em;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    transition: 0.7s ease;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.card .icon {
+    color: #3a6cf4;
+    font-size: 8em;
+    text-align: center;
+}
+
+.info {
+    text-align: center;
+}
+
+.info h3{
+    color: #3a6cf4;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 10px;
+}
+.image-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .image-section img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .image-section img:hover {
+            transform: scale(1.05);
+        }
+.projects {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.projects .content{
+    margin-top: 30px;
+}
+
+.project-card {
+    background-color: #fff;
+    border: 1px solid #fff;
+    min-height: 14em;
+    width: 23em;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px;
+    transition: 0.7s ease;
+}
+
+.project-card:hover {
+   transform: scale(1.1);
+}
+
+.project-card:hover .project-image {
+    opacity: 0.9;
+ }
+
+.project-image img{
+    width: 100%;
+    height: 200px;
+}
+
+.project-info {
+    padding: 1em;
+}
+
+.project-category {
+    font-size: 1.4em;
+    color: #000;
+    color: rgb(8, 8, 231);
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+
+
+.more-details {
+    text-decoration: none;
+    color: #3a6cf4;
+    float: left;
+}
+
+.more-details:hover {
+    color: #601cfc;
+}
+
+.contact .icon{
+    font-size: 4.5em;
+}
+
+.contact .info h3 {
+    color: #000;
+}
+
+.contact .info p {
+    font-size: 1.5em;
+}
+.cards{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h3{
+    font-weight: bold;
+}   
+.as{
+    float: left;
+    text-decoration: none;
+    color: #3a6cf4;
+    font-weight: bold;
+} 
+.as:hover {
+    color: #601cfc;
+}
+.site-footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #000;
+    color: #fff;
+    margin-top: 20px;
+    font-size: 18px;
+    height: auto;
+    max-height: 1600px;
+    width: 100%;
+    
+}
+.site-footer a{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px;
+}
+
+.icons a{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px;
+}
+.site-footer p{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px;
+}
+.fp{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: oblique;
+    font-size: 7px;
+    font-weight: 700;
+}
+@media(max-width: 600px){
+    .header header{
+ width: 100%;
+ max-height: 50px;
+}
+.header a{
+    width: 100%;
+    height: 45px;
+    text-align: center;
+    padding-top: -5px;
+    font-weight: bold;
+   float: inline-end;
+   }
+.header nav{
+    width: 100%;
+    height: 230px;
+   background-color: grey;
+    font-weight: bold;
+}
+.header nav button{
+    width: 120px;
+    padding: 10px;
+    font-size: 12px;
+    font-weight: bold;
+}
+.about{
+    height: 520px;
+}
+aside{
+    width: 98%;
+    max-height: 490px;
+    float: none;
+}
+main{
+    display: none;
+}
+aside #pmain{
+    width: 98%;
+    max-height: 490px;
+}
+}
+    </style>
+</head>
+<body>
+    <section class="header">
+    <a href="#">منصة نسق للخدمات</a>
+    
+            <center>
+                <nav>
+                   
+                        <button onclick="location.href='index.html'"> الرئيسية  </button>
+                         <button onclick="location.href='#projects'"> الدورات التدريبية </button>
+                         <button onclick="location.href='#services'"> الخدمات التدريبية</button>
+                         <button onclick="location.href='traingrequest.html'" >أطلب دورة تدريبية</button>
+                        <button onclick="location.href='contacatUs.html'">اتصل بنا</button>
+                </nav>
+            </center> 
+            </section>
+            <section class="content-section">
+                <!-- الصورة -->
+                <div class="image-container">
+                    <img src="Images/main/traing1.jpg" alt="وصف الصورة" />
+                </div>
+        
+                <!-- النصوص -->
+                <div class="text-container">
+                    <h2>المنصة التدريبية </h2>
+                    <p>مرحبًا بكم في منصة نسق للتدريب، الوجهة الأمثل لتنمية مهاراتكم وتطوير قدراتكم !</p>
+                    <p>نحن في نسق للتدريب نؤمن بأهمية الاستثمار في الإنسان وبأن التعلم المستمر هو مفتاح النجاح في عالمنا المتغير. لذلك، نقدم خدمات تدريبية متكاملة تهدف إلى تمكين الأفراد والمؤسسات من تحقيق أهدافهم بأعلى معايير الجودة والاحترافية.</p>
+                    <p>انضم إلينا في منصة نسق للتدريب واجعلنا شريكك في رحلتك نحو التميز والإبداع! 🌟</p>
+                </div>
+            </section>
+            <section class="image-section">
+                
+                <img src="Images/traing/end.webp" alt="صورة 2">
+                
+                <img src="Images/traing/end2.webp" alt="صورة 5">
+            </section>
+            <h2 class="title">الدورات التدريبية</h2>
+            <section class="projects" id="projects">
+               
+                <div class="content">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="Images/traing/admin.webp" />
+                        </div>
+                        <hr>
+                        <div class="project-info">
+                            <h1 class="project-category">الدورات المالية والإقتصادية</h1>
+                            <strong class="project-title">
+                                <p class="project-details">نقدم مجموعة متنوعة من البرامج التدريبية، تُغطي مواضيع مثل تحليل الأسواق المالية، إدارة المخاطر، التخطيط المالي، الاقتصاد الكلي والجزئي، ومهارات الاستثمار الشخصي والمؤسسي. </p>
+                                <a href="traingrequest.html" class="more-details"> أطلب دورة تدريبية</a>
+                            </strong>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="Images/traing/soi.png" />
+                        </div>
+                        <div class="project-info">
+                            <p class="project-category">الدورات الإجتماعية</p>
+                            <strong class="project-title">
+                                <p class="project-details">تغطي برامج التدريب الاجتماعية مجموعة متنوعة من المواضيع، مثل تطوير المهارات القيادية، إدارة النزاعات، فن التعامل مع الآخرين، الذكاء العاطفي، بالإضافة إلى تعزيز العمل الجماعي وبناء ثقافة الحوار. </p>
+                                <a href="traingrequest.html" class="more-details"> أطلب دورة تدريبية</a>
+                            </strong>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="Images/traing/lang.png" />
+                        </div>
+                        <div class="project-info">
+                            <p class="project-category">اللغات</p>
+                            <strong class="project-title">
+                                <p class="project-details">تُقدم منصة نسق للخدمات برامج تدريبية متخصصة في تعليم اللغات، تهدف إلى تمكين الأفراد من اكتساب مهارات لغوية متقدمة تُسهم في تحقيق أهدافهم الشخصية والمهنية. </p>
+                                <a href="traingrequest.html" class="more-details"> أطلب دورة تدريبية</a>
+                            </strong>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="images/traing/tecno.png" />
+                        </div>
+                        <div class="project-info">
+                            <p class="project-category">الدورات التقنية والتكنولوجية</p>
+                            <strong class="project-title">
+                                <p class="project-details">تهدف هذه الدورات إلى تزويد الأفراد والشركات بالمهارات اللازمة للتفوق في مجالات البرمجة، تصميم التطبيقات، إدارة الأنظمة، تحليل البيانات، والعديد من التخصصات الرقمية الحديثة</p>
+                                <a href="traingrequest.html" class="more-details"> أطلب دورة تدريبية</a>
+                            </strong>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="images/traing/traorg.jpg" />
+                        </div>
+                        <div class="project-info">
+                            <p class="project-category">العمل الطوعي</p>
+                            <strong class="project-title">
+                                <p class="project-details">تغطي دورات العمل التطوعي مواضيع متنوعة مثل تخطيط وتنظيم المبادرات التطوعية، مهارات القيادة والعمل الجماعي، إدارة الوقت والموارد، واستراتيجيات تحقيق الاستدامة في العمل التطوعي. كما تُساعد الدورات في تعزيز فهم المتدربين لأهمية العمل التطوعي في بناء مجتمع قوي ومتماسك.</p>
+                                <a href="traingrequest.html" class="more-details"> أطلب دورة تدريبية</a>
+                            </strong>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="images/traing/scool.png" />
+                        </div>
+                        <div class="project-info">
+                            <p class="project-category">الدورات التربوية</p>
+                            <strong class="project-title">
+                                <p class="project-details">تُغطي الدورات التربوية مجموعة واسعة من المواضيع، مثل استراتيجيات التدريس الحديثة، إدارة الصف، تصميم المناهج، التربية الإيجابية، والتعامل مع احتياجات الطلاب المختلفة.</p>
+                                <a href="traingrequest.html" class="more-details"> أطلب دورة تدريبية</a>
+                            </strong>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="Images/traing/safety.png" />
+                        </div>
+                        <div class="project-info">
+                            <p class="project-category">دورات الصحة والسلامة المهنية</p>
+                            <strong class="project-title">
+                                <p class="project-details">تشمل دورات الصحة والسلامة المهنية مواضيع مهمة مثل تقييم المخاطر، الإسعافات الأولية، إدارة الأزمات، إجراءات مكافحة الحرائق، والتوعية بأحدث بروتوكولات الصحة والسلامة المهنية. </p>
+                                <a href="traingrequest.html" class="more-details"> أطلب دورة تدريبية</a>
+                            </strong>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="Images/traing/marketing.webp" />
+                        </div>
+                        <div class="project-info">
+                            <p class="project-category">الدورات الإعلامية والتسويقية</p>
+                            <strong class="project-title">
+                                <p class="project-details">تغطي دورات الإعلام والتسويق مجموعة متنوعة من المواضيع، مثل إدارة الحملات الإعلانية، التسويق عبر وسائل التواصل الاجتماعي، كتابة المحتوى الإعلامي، تصميم الهوية البصرية، بالإضافة إلى التحليل الاستراتيجي للسوق وبناء العلامات التجارية. </p>
+                                <a href="traingrequest.html" class="more-details"> أطلب دورة تدريبية</a>
+                            </strong>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="images/traing/lader.jpg" />
+                        </div>
+                        <div class="project-info">
+                            <p class="project-category">الدورات الإدارية والمهارية</p>
+                            <strong class="project-title">
+                                <p class="project-details">تشمل الدورات الإدارية و المهارية مواضيع مثل التخطيط الاستراتيجي، إدارة الوقت، تحليل البيانات الإدارية، مهارات اتخاذ القرار، وإدارة المشاريع ، التواصل الفعّال، مهارات التفاوض، بناء فرق العمل، وتنمية التفكير الإبداعي وحل المشكلات.</p>
+                                <a href="traingrequest.html" class="more-details"> أطلب دورة تدريبية</a>
+                            </strong>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <h2 class="title">الخدمات التدريبية</h2>
+                <section class="cards" id="services">
+                    
+                    <div class="content">
+                        <div class="card">
+                            <div class="icon">
+                                <img src="Images/traing/fas fa-edit.png" alt="photo" width="300" height="200">
+                            </div>
+                            <div class="info">
+                                <h3> تصميم الحقائب التدريبية</h2>
+                               <a href="traingSrequest.html" class="as">أطلب الخدمة</a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="icon">
+                                <img src="Images/traing/trapower.jpg" alt="photo" width="300">
+                            </div>
+                            <div class="info">
+                                <h3> العروض التقديمية</h3>
+                                <a href="traingSrequest.html" class="as">أطلب الخدمة</a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="icon">
+                                <img src="Images/traing/trafilm.jpg" alt="photo" width="300">
+                            </div>
+                            <div class="info">
+                                <h3>الأفلام التدريبية</h3>
+                                <a href="traingSrequest.html" class="as">أطلب الخدمة</a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="icon">
+                                <img src="Images/traing/trafor.jpg" alt="photo" width="280">
+                            </div>
+                            <div class="info">
+                                <h3> الأستبيانات والإختبارات  </h2>
+                                    <a href="traingSrequest.html" class="as">أطلب الخدمة</a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="icon">
+                                <img src="Images/traing/tramoh.jpg" alt="photo" width="250">
+                            </div>
+                            <div class="info">
+                                <h3> المحاكاة </h3>
+                                <a href="traingSrequest.html" class="as">أطلب الخدمة</a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="icon">
+                                <img src="Images/traing/tragime.jpg" alt="photo" width="200">
+                            </div>
+                            <div class="info">
+                                <h3>الألعاب التدريبية</h3>
+                                <a href="traingSrequest.html" class="as">أطلب الخدمة</a>
+                            </div>
+                        </div>
+                    </div>
+                   
+                </section>
+                
+  
+    <footer class="site-footer">
+        <p>منصة نسق للخدمات . جميع الحقوق محفوظة . &copy; 2024</p>
+        <span>
+            <a href="#">من نحن</a>|
+            <a href="#">سياسة الخصوصية</a>|
+            <a href="#">الدعم</a>|
+            <a href="#">شروط الاستخدام</a>
+        </span> <br><br>
+            <span class="icons">
+               تابعونا علي :
+                <a href=""><i class="fa-brands fa-facebook"></i></a>|
+                <a href=""><i class="fa-brands fa-instagram"></i></a>|
+                <a href=""><i class="fa-brands fa-youtube"></i></a>|
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+            </span>
+       <p> إشترك في نشرتنا الإخبارية :</p>
+       <button>إشترك</button>
+       <input type="email" placeholder="ادخل بريدك الالكتروني">
+       <p class="fp">Desinged by Sultan</p>
+    </footer>    
+</body>
+</html>

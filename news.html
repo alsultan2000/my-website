@@ -1,0 +1,139 @@
+<?php include 'db.php'; ?>
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نسق الإخبارية</title>
+    <link rel="stylesheet" href="main.css">
+    <style>
+     /* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    direction: rtl;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+header .logo {
+    font-size: 24px;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.breaking-news {
+    background-color: #ff5c5c;
+    color: #fff;
+    padding: 10px;
+}
+
+.news, .articles, .columns {
+    padding: 20px;
+}
+
+.news-item, .article-item, .column-item {
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+}
+
+.news-item img, .article-item img {
+    width: 100px;
+    height: 75px;
+    float: right;
+    margin-left: 15px;
+}
+
+h2 {
+    color: #333;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+}
+
+    </style>
+</head>
+<body>
+    <!-- رأس الصفحة -->
+    <header>
+        <div class="logo">شعار الموقع</div>
+        <nav>
+            <ul>
+                <li><a href="#">الرئيسية</a></li>
+                <li><a href="#">الأخبار</a></li>
+                <li><a href="#">المقالات</a></li>
+                <li><a href="#">الأعمدة الثابتة</a></li>
+                <li><a href="#">الأرشيف</a></li>
+                <li><a href="#">تواصل معنا</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- شريط الأخبار العاجلة -->
+    <section class="breaking-news">
+        <marquee>الأخبار العاجلة تظهر هنا مع عناوين سريعة</marquee>
+    </section>
+
+    <!-- قسم الأخبار -->
+    <section class="news">
+        <h2>الأخبار العاجلة</h2>
+        <div class="news-item">
+            <img src="news-image.jpg" alt="صورة الخبر">
+            <h3>عنوان الخبر العاجل</h3>
+            <p>نص مختصر للخبر...</p>
+        </div>
+    </section>
+
+    <!-- قسم المقالات -->
+    <section class="articles">
+        <h2>المقالات</h2>
+        <div class="article-item">
+            <img src="article-image.jpg" alt="صورة المقال">
+            <h3>عنوان المقال</h3>
+            <p>نص مختصر للمقال...</p>
+        </div>
+    </section>
+
+    <!-- قسم الأعمدة الثابتة -->
+    <section class="columns">
+        <h2>الأعمدة الثابتة</h2>
+        <div class="column-item">
+            <h3>عنوان العمود</h3>
+            <p>نص مختصر للعمود...</p>
+        </div>
+    </section>
+
+    <!-- قسم الأرشيف -->
+    <section class="archive">
+        <h2>الأرشيف</h2>
+        <p>يمكنك البحث في الأرشيف هنا...</p>
+    </section>
+
+    <!-- تذييل الصفحة -->
+    <footer>
+        <p>حقوق النشر &copy; 2024</p>
+    </footer>
+</body>
+</html>

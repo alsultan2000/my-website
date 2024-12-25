@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>   طلب العلاج الدولي</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General Reset */
+body, h1, h2, h3, p, label {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    font-family: "Arial", sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+    text-align: right;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    
+}
+
+/* Header Styles */
+.header {
+    background-color: #fff;
+    color: blue;
+    padding: 20px 0;
+    box-shadow: 0px 0px 10px black;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav a {
+    color: blue;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1.2em;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+}
+
+/* Form Section */
+.form-section {
+    text-align: center;
+    background: white;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.form-section h2 {
+    color: #0066cc;
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+
+.form-section p {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+}
+
+.treatment-form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.treatment-form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: right;
+    color: #005bb5;
+    font-size: 20px;
+}
+
+.treatment-form input,
+.treatment-form select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.treatment-form input:focus,
+.treatment-form select:focus {
+    outline: none;
+    border-color: #0066cc;
+    box-shadow: 0 0 5px rgba(0, 102, 204, 0.5);
+}
+
+.treatment-form input[type="file"] {
+    padding: 5px;
+}
+
+.btn {
+    background-color: #0066cc;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.btn:hover {
+    background-color: #005bb5;
+}
+
+/* Footer */
+.footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+    </style>
+</head>
+<body >
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <h1>منصة نسق للخدمات </h1>
+            <nav class="nav">
+                <a href="index.html">الرئيسية</a>/
+                <a href="medical.html">العلاج الدولي</a>/
+                <a href="contacatUs.html">اتصل بنا</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="form-section">
+            <h2>طلب العلاج الدولي </h2>
+            <p>يرجى تعبئة النموذج التالي لتقديم خدمة العلاج الدولي. فريقنا جاهز للتواصل معك لمساعدتك في الحصول على أفضل الخدمات الطبية.</p>
+            <form class="treatment-form" action="#" method="POST" enctype="multipart/form-data">
+                <!-- Patient Name -->
+                <label for="patient-name">اسم المريض</label>
+                <input type="text" id="patient-name" name="patient_name" placeholder="أدخل اسم المريض" required>
+
+                <!-- Mobile Number -->
+                <label for="mobile-number">رقم الجوال</label>
+                <input type="tel" id="mobile-number" name="mobile_number" placeholder="أدخل رقم الجوال" required>
+
+                <!-- Patient Age -->
+                <label for="patient-age">عمر المريض</label>
+                <input type="number" id="patient-age" name="patient_age" placeholder="أدخل عمر المريض" required>
+
+                <!-- Gender -->
+                <label for="gender">النوع</label>
+                <select id="gender" name="gender" required>
+                    <option value=""></option>
+                    <option value="male">ذكر</option>
+                    <option value="female">أنثى</option>
+                </select>
+
+                <!-- Country Selection -->
+                <label for="country">الدولة</label>
+                <select id="country" name="country" required>
+                    <option value=""></option>
+                    <option value="india">الهند</option>
+                    <option value="egypt">مصر</option>
+                    <option value="russia">روسيا</option>
+                </select>
+
+                <!-- Contact Person -->
+                <label for="contact-person">اسم شخص للتواصل</label>
+                <input type="text" id="contact-person" name="contact_person" placeholder="أدخل اسم الشخص للتواصل" required>
+
+                <!-- Upload Medical File -->
+                <label for="medical-file">تحميل الملف الطبي</label>
+                <input type="file" id="medical-file" name="medical_file" required>
+
+                <!-- Submit Button -->
+                <button type="submit" class="btn">طلب الخدمة</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2024 منصة نسق للخدمات. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html dir="rtl">
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge - chrome=1'>
+    <title>الخدمات الإعلامية</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400..800&display=swap" rel="stylesheet">
+    <link rel="icon" href="Images/medai/medaiicon.png" />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <script src='main.js'></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Baloo Bhaijaan 2", sans-serif;
+
+        }
+
+        header {
+            width: 100%;
+            height: 70px;
+            margin-top: 0;
+            margin-bottom: 10px;
+            background-color: white;
+            box-shadow: 0px 0px 12px black;
+        }
+
+        .header a {
+            width: 20%;
+            height: 30px;
+            color: blue;
+            text-decoration: none;
+            font-size: 22px;
+            font-style: initial;
+            font-weight: bold;
+            margin-top: 15px;
+            margin-right: 15px;
+            float: right;
+            margin-bottom: 10px;
+        }
+
+        .header nav {
+            width: 100%;
+            height: 85px;
+            background-color: #fff;
+            font-weight: bold;
+            box-shadow: 0px 0px 12px black;
+        }
+
+        .header nav button {
+            width: 140px;
+            padding: 10px;
+            margin-top: 20px;
+            color: blue;
+            border: none;
+            background: none;
+            outline: none;
+            font-size: 18px;
+            font-weight: bold;
+            transition: 1s;
+            font-family: "Cairo", sans-serif;
+        }
+
+        .header nav button:hover {
+            text-decoration: underline;
+        }
+
+        .content-section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            padding: 20px;
+            background-color: #fff;
+            margin: 20px;
+            border-radius: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .image-container {
+            flex: 1;
+            max-width: 40%;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            object-fit: cover;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .text-container {
+            flex: 2;
+            padding: 10px;
+        }
+
+        .text-container h2 {
+            margin: 0 0 15px;
+            font-size: 34px;
+            color: blue;
+            text-decoration: underline;
+        }
+
+        .text-container p {
+            margin: 10px 0;
+            font-size: 20px;
+            color: blue;
+            line-height: 1.6;
+        }
+
+        .content {
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        .mtitle {
+            color: blue;
+            text-align: center;
+            font-size: 40px;
+            font-weight: 800;
+        }
+
+        .content {
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            flex-wrap: wrap;}
+            .services-section {
+    padding: 2rem;
+    text-align: center;
+}
+
+.services-section h2 {
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    color: #004080;
+}
+
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.service-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 360px;
+    padding: 1rem;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.service-card img {
+    width: 100%;
+    height: 250px;
+    border-radius: 8px 8px 0 0;
+    margin-bottom: 1rem;
+}
+
+.service-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: blue;
+    text-decoration: underline;
+}
+
+.service-card p {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgb(0, 0, 128);
+    text-align: justify;
+    text-indent: 8px;
+    height: 80px;
+}
+
+.service-card ul {
+    text-align: justify;
+    margin: 0 0 1rem 0;
+    padding: 10;
+    list-style: none;
+}
+
+.service-card ul li {
+    margin-bottom: 0.5rem;
+    padding-left: 1.2rem;
+    position: relative;
+    color: blue;
+    font-weight: 600;
+}
+
+.service-card ul li::before {
+    content: "•";
+    color: #fff;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+.service-link {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #004080;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.service-link:hover {
+    background-color: #003366;
+}
+
+    .site-footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #000;
+    color: #fff;
+    margin-top: 20px;
+    font-size: 18px;
+    height: auto;
+    max-height: 1600px;
+    width: 100%;
+    
+}
+.site-footer a{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px;
+}
+
+.icons a{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px;
+}
+.site-footer p{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px;
+}
+.fp{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: oblique;
+    font-size: 7px;
+    font-weight: 700;
+}
+
+    </style>
+    </style>
+</head>
+
+<body>
+    <section class="header">
+        <a href="#">منصة نسق للخدمات</a>
+
+        <center>
+            <nav>
+
+                <button onclick="location.href='index.html'"> الرئيسية </button>
+                <button onclick="location.href='#services'"> خـدمــاتنا</button>
+                <button onclick="location.href='request.html'">أطلب الخدمة</button>
+                <button onclick="location.href='contacatUs.html'">اتصل بنا</button>
+            </nav>
+        </center>
+    </section>
+    <section class="content-section">
+        <!-- الصورة -->
+        <div class="image-container">
+            <img src="Images/medai/1.jpg" alt="وصف الصورة" />
+        </div>
+
+        <!-- النصوص -->
+        <div class="text-container">
+            <h2>الخدمات الإعلامية</h2>
+            <p>في عالم يتسم بالتنافسية العالية والتغير السريع، تبرز أهمية التواصل الفعّال والمحتوى الجذاب كعوامل رئيسية
+                لنجاح أي مشروع ، نحن هنا لنقدم لك مجموعة متكاملة من الخدمات الإعلامية التي تهدف إلى تعزيز وجودك الرقمي
+                وزيادة تفاعل جمهورك من إنتاج محتوى متميز إلى استراتيجيات تسويق مبتكرة. </p>
+
+            <p>نحن نؤمن بأن كل فكرة تستحق أن تُروى بطريقة تترك أثرًا، دعنا نتعاون معًا لنحول رؤيتك إلى واقع ملموس يحقق
+                أهدافك ويبرز اسمك وعلامتك التجارية في السوق .
+                نقدم لكم مجموعة من الأنشطة التي تهدف إلى نقل المعلومات، تعزيز الوعي بالعلامات التجارية، والتفاعل مع
+                الجمهور. </p>
+        </div>
+    </section>
+    <section class="services-section" id="services">
+        <h2>خـدماتنا</h2>
+        <div class="services-container">
+           
+            <div class="service-card">
+                <img src="Images/medai/2.jpg" alt="خدمة 1">
+                <h3>التخطيط الإعلامي:</h3>
+                <p>نضع استراتيجيات إعلامية متكاملة تضمن الوصول إلى الجمهور المستهدف بأفضل الطرق الممكنة، مع تحديد القنوات المثلى والرسائل المناسبة.</p>
+                <ul>
+                    <li>وضع استراتيجيات إعلامية متكاملة تتماشى مع أهداف المؤسسة.</li>
+                    <li>تحليل الجمهور المستهدف وتحديد قنوات التواصل المناسبة.</li>
+                    <li>إعداد خطط لتنفيذ الحملات الإعلامية والإعلانية.</li>
+                </ul>
+                <a href="#" class="service-link">طلب الخدمة</a>
+            </div>
+
+           
+            <div class="service-card">
+                <img src="Images/medai/3.jpg" alt="خدمة 2">
+                <h3>إنتاج المحتوى الإعلامي:</h3>
+                <p>نصمم ونبتكر محتوى إعلاميًا متميزًا يجمع بين الإبداع والجودة، بما يعزز رسالتكم ويحقق التأثير المطلوب.</p>
+                <ul>
+                    <li>كتابة وإعداد مقالات، أخبار، وتقارير صحفية متميزة.</li>
+                    <li>إنشاء نصوص إعلانية مبتكرة لجذب الانتباه وتحفيز التفاعل.</li>
+                    <li>إعداد محتوى مخصص لمنصات التواصل الاجتماعي يعبر عن هوية المؤسسة.</li>
+                </ul>
+                <a href="#" class="service-link">طلب الخدمة</a>
+            </div>
+
+    
+            <div class="service-card">
+                <img src="Images/medai/4.jpg" alt="خدمة 3">
+                <h3>إدارة الحملات الإعلانية:</h3>
+                <p>نخطط وننفذ حملات إعلانية مبتكرة، تضمن تحقيق أقصى درجات التفاعل </p>
+                <ul>
+                    <li>تنفيذ حملات إعلانية شاملة على وسائل الإعلام التقليدية والرقمية.</li>
+                    <li>تحديد الفئات المستهدفة وضمان الوصول الأمثل لهم.</li>
+                    <li>قياس وتحليل أداء الحملات وتقديم توصيات للتحسين.</li>
+                </ul>
+                <a href="#" class="service-link">طلب الخدمة</a>
+            </div>
+            <div class="service-card">
+                <img src="Images/medai/5.png" alt="خدمة 1">
+                <h3>إدارة العلاقات العامة:</h3>
+                <p>نبني ونطور علاقات فعالة مع وسائل الإعلام والجمهور المستهدف، لتعزيز صورة العلامة التجارية وتقوية سمعتها.</p>
+                <ul>
+                    <li>التواصل مع وسائل الإعلام والصحفيين لنشر أخبار المؤسسة.</li>
+                    <li>تنظيم المؤتمرات والفعاليات الصحفية.</li>
+                    <li>بناء علاقات متينة مع الشركاء والمجتمع لتعزيز الصورة الإيجابية.</li>
+                </ul>
+                <a href="#" class="service-link">طلب الخدمة</a>
+            </div>
+
+           
+            <div class="service-card">
+                <img src="Images/medai/6.jpg" alt="خدمة 2">
+                <h3>تصميم وإنتاج المواد الإعلامية:</h3>
+                <p>نقدم تصاميم احترافية وإنتاجًا متقنًا للمطبوعات والمنشورات، بما يعكس هوية مؤسستكم ويبرز تميزها.</p>
+                <ul>
+                    <li>تصميم المطبوعات الإعلامية مثل البروشورات والنشرات الإخبارية.</li>
+                    <li>إنتاج الفيديوهات الترويجية والأفلام الوثائقية.</li>
+                    <li>إنشاء تصاميم مبتكرة للمواد الرقمية والمطبوعة.</li>
+                </ul>
+                <a href="#" class="service-link">طلب الخدمة</a>
+            </div>
+
+    
+            <div class="service-card">
+                <img src="Images/medai/7.jpg" alt="خدمة 3">
+                <h3>إدارة وسائل التواصل الإجتماعي</h3>
+                <p>ندير حساباتكم بفاعلية، مع تقديم محتوى جذاب واستراتيجيات نمو مستدامة لزيادة التفاعل وبناء مجتمع قوي.</p>
+                <ul>
+                    <li>إعداد استراتيجيات لإدارة حسابات المؤسسات على المنصات الاجتماعية.</li>
+                    <li>نشر محتوى تفاعلي يعزز من التفاعل مع الجمهور.</li>
+                    <li>مراقبة وتحليل أداء الصفحات لضمان تحقيق الأهداف.</li>
+                </ul>
+                <a href="#" class="service-link">طلب الخدمة</a>
+            </div>
+            <div class="service-card">
+                <img src="Images/medai/8.png" alt="خدمة 1">
+                <h3> المحتوى المرئي والمسموع:</h3>
+                <p>نوفر حلولاً إبداعية لإنتاج الفيديوهات والمواد الصوتية التي تنقل رسالتكم بأعلى جودة.</p>
+                <ul>
+                    <li>تطوير وإنتاج فيديوهات إبداعية للإعلانات والترويج.</li>
+                    <li>تسجيل وإعداد برامج صوتية (بودكاست) تناسب الجمهور المستهدف.</li>
+                    <li>تقديم خدمات تصوير احترافية للأحداث والفعاليات.</li>
+                </ul>
+                <a href="#" class="service-link">طلب الخدمة</a>
+            </div>
+
+           
+            <div class="service-card">
+                <img src="Images/medai/9.png" alt="خدمة 2">
+                <h3>مراقبة وتحليل الإعلام:</h3>
+                <p>نتابع الأداء الإعلامي ونقدم تقارير تحليلية دقيقة تساعدكم على اتخاذ قرارات مدروسة وتحسين استراتيجياتكم.</p>
+                <ul>
+                    <li>متابعة وتحليل الأخبار والتغطيات المتعلقة بالمؤسسة.</li>
+                    <li>تقييم الانطباعات العامة وإعداد تقارير دورية.</li>
+                    <li>اقتراح حلول لتحسين الصورة العامة وتعزيز التواجد الإعلامي.</li>
+                </ul>
+                <a href="#" class="service-link">طلب الخدمة</a>
+            </div>
+
+    
+            <div class="service-card">
+                <img src="Images/medai/10.jpg" alt="خدمة 3">
+                <h3>تنظيم الفعاليات الإعلامية:</h3>
+                <p>نخطط وننظم فعاليات إعلامية متميزة تضمن تغطية واسعة وتأثيرًا إيجابيًا يعزز من مكانتكم.</p>
+                <ul>
+                    <li>إدارة الأحداث والفعاليات مثل المؤتمرات والمعارض.</li>
+                    <li>تنسيق التغطية الإعلامية للفعاليات.</li>
+                    <li>إعداد وتجهيز المواد الترويجية المصاحبة للفعاليات.</li>
+                </ul>
+                <a href="#" class="service-link">طلب الخدمة</a>
+            </div>
+            <div class="service-card">
+                <img src="Images/medai/11.png" alt="خدمة 1">
+                <h3> الاستشارات الإعلامية:</h3>
+                <p>نقدم برامج تدريبية واستشارات متخصصة لتطوير مهاراتكم الإعلامية وبناء فرق عمل متمكنة.</p>
+                <ul>
+                    <li>تدريب الفرق على مهارات التعامل مع الإعلام والتواصل الجماهيري.</li>
+                    <li>تقديم استشارات لتحسين أداء الحملات الإعلامية.</li>
+                    <li>توجيه المؤسسات حول أفضل الممارسات للتواصل مع الجمهور.</li>
+                </ul>
+                <a href="#" class="service-link">طلب الخدمة</a>
+            </div>
+
+           
+            <div class="service-card">
+                <img src="Images/medai/12.jpeg" alt="خدمة 2">
+                <h3>إنتاج الإعلانات الرقمية:</h3>
+                <p>نصمم وننتج إعلانات رقمية مبتكرة تتوافق مع أهدافكم وتحقق نتائج مميزة على المنصات المختلفة.</p>
+                <ul>
+                    <li>إعداد وتصميم إعلانات موجهة للمنصات الرقمية.</li>
+                    <li>تحسين أداء الإعلانات باستخدام البيانات والتحليلات.</li>
+                    <li>استخدام تقنيات مثل الفيديو التفاعلي لجذب الجمهور.</li>
+                </ul>
+                <a href="#" class="service-link">طلب الخدمة</a>
+            </div>
+
+    
+            <div class="service-card">
+                <img src="Images/medai/13.png" alt="خدمة 3">
+                <h3>الترويج عبر المؤثرين:</h3>
+                <p>نوفر استراتيجيات فعالة للترويج عبر المؤثرين، مما يضمن الوصول إلى جمهور أوسع وزيادة الثقة بمنتجاتكم أو خدماتكم.</p>
+                <ul>
+                    <li>اختيار المؤثرين المناسبين للترويج للخدمات أو المنتجات.</li>
+                    <li>إعداد حملات بالتعاون مع المؤثرين لتحقيق أهداف المؤسسة.</li>
+                    <li>متابعة وقياس تأثير هذه الحملات على الجمهور.</li>
+                </ul>
+                <a href="#" class="service-link">طلب الخدمة</a>
+            </div>
+        </div>
+    </section>
+    <footer class="site-footer">
+        <p>منصة نسق للخدمات . جميع الحقوق محفوظة . &copy; 2024</p>
+        <span>
+            <a href="#">من نحن</a>|
+            <a href="#">سياسة الخصوصية</a>|
+            <a href="#">الدعم</a>|
+            <a href="#">شروط الاستخدام</a>
+        </span> <br><br>
+            <span class="icons">
+               تابعونا علي :
+                <a href=""><i class="fa-brands fa-facebook"></i></a>|
+                <a href=""><i class="fa-brands fa-instagram"></i></a>|
+                <a href=""><i class="fa-brands fa-youtube"></i></a>|
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+            </span>
+       <p> إشترك في نشرتنا الإخبارية :</p>
+       <button>إشترك</button>
+       <input type="email" placeholder="ادخل بريدك الالكتروني">
+       <p class="fp">Desinged by Sultan</p>
+    </footer>    
+</body>
+</html>
+
+</body>
+
+</html>

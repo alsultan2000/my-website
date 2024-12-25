@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تفاصيل أنشطة الخدمات - منصة نسق</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* General Reset */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Header Styles */
+.header {
+    background-color: #0066cc;
+    color: white;
+    padding: 20px 0;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1em;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+}
+
+/* Introduction Section */
+.intro {
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.intro h2 {
+    color: #0066cc;
+    margin-bottom: 10px;
+}
+
+.intro p {
+    font-size: 1.2em;
+}
+
+/* Services Section */
+.services {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.service {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.service:hover {
+    transform: translateY(-5px);
+}
+
+.service i {
+    font-size: 40px;
+    color: #0066cc;
+    margin-bottom: 15px;
+}
+
+.service h3 {
+    color: #0066cc;
+    margin-bottom: 10px;
+}
+
+.service p {
+    margin-bottom: 10px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #0066cc;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #005bb5;
+}
+
+/* Footer Section */
+.footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+.btn-footer {
+    color: white;
+    background: #0066cc;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn-footer:hover {
+    background: #005bb5;
+}
+
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <h1>منصة نسق للخدمات</h1>
+            <nav class="nav">
+                <a href="#services">الخدمات</a>
+                <a href="#about">من نحن</a>
+                <a href="#contact">اتصل بنا</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="intro">
+            <h2>تفاصيل أنشطة الخدمات المقدمة من منصة نسق</h2>
+            <p>تقدم منصة "نسق" مجموعة متكاملة من الخدمات التي تلبي احتياجات الأفراد والشركات، مع التركيز على الجودة والابتكار. استكشف أنشطتنا المتنوعة، واختر الخدمة التي تناسبك للحصول على تجربة فريدة ومميزة.</p>
+        </section>
+
+        <section id="services" class="services">
+            <!-- Service 1 -->
+            <div class="service">
+                <i class="fas fa-business-time"></i>
+                <h3>1. خدمات إدارة وريادة الأعمال</h3>
+                <p><strong>أ. التخطيط الاستراتيجي للأعمال:</strong> مساعدتك في وضع خطط استراتيجية محكمة لتحقيق أهدافك.</p>
+                <p><strong>ب. تطوير المهارات القيادية:</strong> برامج تدريبية متخصصة لتنمية القدرات القيادية.</p>
+                <p><strong>ج. دراسات السوق والتحليل المالي:</strong> تقديم دراسات شاملة لتحليل الأسواق وتحديد الفرص.</p>
+                <a href="#request-service" class="btn">أطلب الخدمة</a>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="service">
+                <i class="fas fa-chart-line"></i>
+                <h3>2. خدمات الدراسات والبحوث</h3>
+                <p><strong>أ. إعداد الدراسات الميدانية:</strong> جمع وتحليل البيانات لدعم قراراتك.</p>
+                <p><strong>ب. كتابة الأبحاث الأكاديمية:</strong> تقديم أبحاث دقيقة ومتكاملة.</p>
+                <p><strong>ج. تحليل البيانات والإحصاءات:</strong> استخدام تقنيات حديثة لتحليل البيانات بفعالية.</p>
+                <a href="#request-service" class="btn">أطلب الخدمة</a>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="service">
+                <i class="fas fa-laptop-code"></i>
+                <h3>3. خدمات البرمجة والتصميم</h3>
+                <p><strong>أ. تطوير المواقع والتطبيقات:</strong> بناء مواقع وتطبيقات متجاوبة ومبتكرة.</p>
+                <p><strong>ب. تصميم الهوية البصرية:</strong> إنشاء شعارات وتصاميم تعكس هوية عملك.</p>
+                <p><strong>ج. البرمجة الخلفية وتحليل البيانات:</strong> تطوير أنظمة ذكية تعزز أداء مؤسستك.</p>
+                <a href="#request-service" class="btn">أطلب الخدمة</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2024 منصة نسق للخدمات. جميع الحقوق محفوظة.</p>
+            
+        </div>
+    </footer>
+</body>
+</html>

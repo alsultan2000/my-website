@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>البرمجة والتصميم</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            direction: rtl;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+    .header{
+        width: 100%;
+        height: 100px;
+        display: flex;
+        box-shadow: 0px 0px 12px black;
+        background-color: #fff;
+        gap: 25px;
+        align-content: center;
+    }
+    .header a{
+    width: 30%;
+    height: 30px;
+    color: blue;
+    background-color: #fff;
+    text-decoration: none;
+    font-size: 22px;
+    font-style: initial;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-right: 30px;
+    float: right;
+    margin-bottom: 10px;
+    }
+    center{
+        background-color: #fff;
+    }
+    .header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+    
+    .header nav button{
+        width: 140px;
+        border: none;
+        color: blue;
+        font-size: 1.3em;
+        font-weight: bold;
+        background-color: #fff;
+        margin-top: 30px;
+        transition: 0.7s ease;
+    }
+    .header nav button:hover{
+        transform: scale(1.1);
+    }
+      
+        .main-section {
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 25px;
+            height: 520px;
+            border-radius: 15px;
+            
+        }
+
+        .main-section h1 {
+            font-size: 34px;
+            margin-bottom: 15px;
+            color: blue;
+            text-align: center;
+        }
+
+        .main-section p {
+            font-size: 24px;
+            font-weight: 600;
+            text-align: justify;
+            text-indent: 15px;
+            margin-bottom: 10px;
+            color: rgb(0, 0, 128);
+        }
+
+        .main-section img {
+            max-width: 60%;
+            margin: 15px;
+            height: 80%;
+            border-radius: 10px;
+            margin: 15px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .services-section {
+            background-color: #f7f7f7;
+            padding: 20px;
+        }
+
+        .services-section h2 {
+            font-size: 34px;
+            text-align: center;
+            margin-bottom: 20px;
+            color: blue;
+        }
+
+        .services-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+            
+        }
+
+        .service-card {
+         background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 15px;
+        text-align: center;
+        width: calc(33.33% - 20px); /* يجعل كل بطاقة تأخذ ثلث العرض مع مراعاة الفجوات */
+        box-sizing: border-box; /* لضمان حساب الحشوات ضمن العرض */
+        }
+
+        .service-card h3 {
+            font-size: 22px;
+            color: #007BFF;
+            margin-bottom: 10px;
+            text-decoration: underline;
+        }
+
+        .service-card ul {
+            list-style: square;
+            padding-right: 10px;
+            margin: 10px 0;
+            height: 150px;
+        }
+
+        .service-card ul li {
+            font-size: 18px;
+            color: rgb(0, 0, 128);
+            margin-bottom: 5px;
+            text-align: justify;
+            font-weight: 600;
+            
+        }
+
+        .service-card img {
+            width: 100%;
+            height: 250px;
+            border-radius: 10px;
+            margin: 10px 0;
+        }
+
+        .service-card a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 15px;
+            background-color: #007BFF;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .service-card a:hover {
+            background-color: #0056b3;
+        }
+        .site-footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #000;
+    color: #fff;
+    margin-top: 20px;
+    font-size: 18px;
+    height: auto;
+    max-height: 1600px;
+    width: 100%;
+    
+}
+.site-footer a{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px;
+}
+
+.icons a{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px;
+}
+.site-footer p{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px;
+}
+.fp{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: oblique;
+    font-size: 7px;
+    font-weight: 700;
+}
+
+
+        /* التأكد من التوافق مع الشاشات الصغيرة */
+        @media (max-width: 600px) {
+            .services-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .service-card {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="header">
+    <a href="#">منصة نسق للخدمات</a>
+
+    <center>
+        <nav>
+
+            <button onclick="location.href='index.html'"> الرئيسية </button>
+            <button onclick="location.href='#services-section'"> خـدمــاتنا</button>
+            <button onclick="location.href='request.html'">أطلب الخدمة</button>
+            <button onclick="location.href='contacatUs.html'">اتصل بنا</button>
+        </nav>
+    </center>
+</section>
+
+    <section class="main-section">
+       <center>
+        <h1>البرمجة والتصميم</h1>
+        <p>
+            نسق هي منصة مبتكرة تضع بين يديك خدمات متكاملة تساعدك على تحويل أفكارك إلى واقع رقمي باهر. سواء كنت رائد أعمال تبحث عن تصميم موقع جذاب، أو صاحب مشروع تطمح لتطوير تطبيق احترافي، فإن فريقنا المتمرس من المطورين والمصممين مستعد لدعمك في كل خطوة.
+نؤمن في نسق بأهمية الجمع بين الإبداع التقني والجمال البصري لتقديم خدمات متميزة تعكس هوية مشروعك بدقة. من خلال حلولنا، نضمن تحقيق تجربة مستخدم سلسة وتصميمات فريدة قادرة على جذب الأنظار.
+ابدأ رحلتك معنا اليوم ودع منصة نسق تكون شريكك في بناء نجاح رقمي يعكس رؤيتك وأهدافك. ✨
+
+        </p>
+       </center>
+        <img src="Images/design/maindesign.jpg" alt="صورة توضيحية">
+    </section>
+
+    <section class="services-section" id="services-section">
+        <h2>خـدمــاتنا</h2>
+        <div class="services-container">
+            <div class="service-card">
+                <h3>تطوير المواقع الإلكترونية:</h3>
+                <ul>
+                    <li>تصميم وتطوير مواقع إلكترونية متكاملة تلبي احتياجات العملاء.</li>
+                    <li>تحسين تجربة المستخدم (UX) من خلال واجهات سهلة الاستخدام.</li>
+                    <li>بناء مواقع متجاوبة مع مختلف الأجهزة (Responsive Design).</li>
+                </ul>
+                <img src="Images/design/web.png" alt="صورة ">
+                <a href="request.html">طلب الخدمة</a>
+            </div>
+            <div class="service-card">
+                <h3>تطوير تطبيقات الهواتف الذكية:</h3>
+                <ul>
+                    <li>إنشاء تطبيقات مخصصة لمنصات Android و iOS.</li>
+                    <li>تحسين أداء التطبيقات وضمان توافقها مع الأنظمة المختلفة.</li>
+                    <li>تطوير واجهات استخدام جذابة وسهلة التصفح.</li>
+                </ul>
+                <img src="Images/design/mobile.jpg" alt="صورة الخدمة الثانية">
+                <a href="request.html">طلب الخدمة</a>
+            </div>
+            <div class="service-card">
+                <h3>تطوير الأنظمة البرمجية:</h3>
+                <ul>
+                    <li>برمجة حلول برمجية مخصصة لإدارة الأعمال مثل أنظمة ERP وCRM.</li>
+                    <li>تحسين أداء الأنظمة القائمة وإضافة ميزات جديدة.</li>
+                    <li>ضمان تكامل الأنظمة مع الأدوات الأخرى المستخدمة في المؤسسة.</li>
+                </ul>
+                <img src="Images/design/programming.jpg" alt="صورة  ">
+                <a href="request.html">طلب الخدمة</a>
+            </div>
+            <div class="service-card">
+                <h3>البرمجة الخلفية (Back-End):</h3>
+                <ul>
+                    <li>بناء قواعد بيانات متكاملة لإدارة البيانات بكفاءة.</li>
+                    <li>تطوير واجهات برمجية (APIs) لربط الأنظمة المختلفة.</li>
+                    <li>تحسين الأمان وحماية البيانات.</li>
+                </ul>
+                <img src="Images/design/Back-End.jpg" alt="صورة  ">
+                <a href="request.html">طلب الخدمة</a>
+            </div>
+            <div class="service-card">
+                <h3>تصميم واجهات المستخدم (UI):</h3>
+                <ul>
+                    <li>إنشاء تصاميم تركز على راحة المستخدم وسهولة التنقل.</li>
+                    <li>اختبار التصاميم لضمان توافقها مع مختلف الأجهزة.</li>
+                    <li>اختيار الألوان والخطوط والعناصر الرسومية بما يتماشى مع هوية العميل.</li>
+                </ul>
+                <img src="Images/design/ul.png" alt="صورة  ">
+                <a href="request.html">طلب الخدمة</a>
+            </div>
+            <div class="service-card">
+                <h3>تصميم تجربة المستخدم (UX):</h3>
+                <ul>
+                    <li>دراسة سلوك المستخدمين لتطوير تصاميم تناسب احتياجاتهم.</li>
+                    <li>تحسين التفاعل بين المستخدم والنظام لجعل التجربة أكثر سهولة.</li>
+                    <li>تنفيذ اختبارات لضمان جودة تجربة المستخدم.</li>
+                </ul>
+                <img src="Images/design/ux.png" alt="صورة  ">
+                <a href="request.html">طلب الخدمة</a>
+            </div>
+            <div class="service-card">
+                <h3>الأتمتة وتحسين العمليات:</h3>
+                <ul>
+                    <li>تطوير برامج لأتمتة العمليات الإدارية والتشغيلية.</li>
+                    <li>تصميم روبوتات برمجية (RPA) لتسريع إنجاز المهام الروتينية.</li>
+                    <li>تنفيذ اختبارات لضمان جودة تجربة المستخدم.</li>
+                </ul>
+                <img src="Images/design/process.jpg" alt="صورة  ">
+                <a href="request.html">طلب الخدمة</a>
+            </div>
+                       <div class="service-card">
+                <h3>التدريب والاستشارات:</h3>
+                <ul>
+                    <li>تقديم استشارات لتحسين الأداء الرقمي للمؤسسات.</li>
+                    <li>توجيه العملاء حول أفضل الحلول البرمجية والتصاميم التي تناسب احتياجاتهم.</li>
+                    <li>تقديم دورات تدريبية في البرمجة والتصميم.</li>
+                </ul>
+                <img src="Images/design/consoltant.png" alt="صورة ">
+                <a href="request.html">طلب الخدمة</a>
+            </div>
+            <div class="service-card">
+                <h3>تحسين الأداء والتكامل بين البرمجة والتصميم</h3>
+                <ul>
+                    <li>تحسين محركات البحث (SEO) .</li>
+                    <li>إدارة المشاريع الرقمية.</li>
+                    <li>اختبار التطبيقات والتصاميم.</li>
+                </ul>
+                <img src="Images/design/seco.jpg" alt="صورة الخدمة الثالثة">
+                <a href="request.html">طلب الخدمة</a>
+            </div>
+            <div class="service-card">
+                <h3>تصميم الشعارات والهوية البصرية:</h3>
+                <ul>
+                    <li>تصميم شعارات احترافية تعبر عن هوية العلامة التجارية.</li>
+                    <li>إنشاء عناصر الهوية البصرية مثل الكروت الشخصية، الأوراق الرسمية، .</li>
+                    <li>تطوير هوية مرئية تعزز من تميز العلامة التجارية.</li>
+                </ul>
+                <img src="Images/design/visual.jpg" alt="صورة  ">
+                <a href="request.html">طلب الخدمة</a>
+            </div>
+                       <div class="service-card">
+                <h3>تصميم الرسوم المتحركة (Motion Graphics):</h3>
+                <ul>
+                    <li>إنشاء فيديوهات رسوم متحركة لشرح الخدمات أو المنتجات.</li>
+                    <li>تطوير عناصر متحركة جذابة للإعلانات الرقمية.</li>
+                    <li>تحسين التفاعل مع الجمهور من خلال التصاميم الديناميكية.</li>
+                </ul>
+                <img src="Images/design/motion.jpg" alt="صورة ">
+                <a href="request.html">طلب الخدمة</a>
+            </div>
+            <div class="service-card">
+                <h3>تصميم الجرافيك:</h3>
+                <ul>
+                    <li>إعداد تصاميم مبتكرة للمواد الإعلانية والمطبوعات.</li>
+                    <li>تصميم منشورات وسائل التواصل الاجتماعي.</li>
+                    <li>تطوير تصاميم إنفوجرافيك لتوضيح الأفكار والبيانات.</li>
+                </ul>
+                <img src="Images/design/gra.png" alt="صورة الخدمة الثالثة">
+                <a href="request.html">طلب الخدمة</a>
+            </div>
+            
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <p>منصة نسق للخدمات . جميع الحقوق محفوظة . &copy; 2024</p>
+        <span>
+            <a href="#">من نحن</a>|
+            <a href="#">سياسة الخصوصية</a>|
+            <a href="#">الدعم</a>|
+            <a href="#">شروط الاستخدام</a>
+        </span> <br><br>
+            <span class="icons">
+               تابعونا علي :
+                <a href=""><i class="fa-brands fa-facebook"></i></a>|
+                <a href=""><i class="fa-brands fa-instagram"></i></a>|
+                <a href=""><i class="fa-brands fa-youtube"></i></a>|
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+            </span>
+       <p> إشترك في نشرتنا الإخبارية :</p>
+       <button>إشترك</button>
+       <input type="email" placeholder="ادخل بريدك الالكتروني">
+       <p class="fp">Desinged by Sultan</p>
+    </footer>
+</body>
+</html>

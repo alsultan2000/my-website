@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اتصل بنا</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    direction: rtl;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    color: #fff;
+    padding: 15px 20px;
+    height: 70px;
+    box-shadow: 0px 4px 8px black;
+    width: 100%;   
+}
+
+.site-header .logo img {
+  width: 20%;
+  height: 75%;
+  padding-right: 20px;
+}
+
+.site-header .navigation ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 30px;
+    
+}
+
+.site-header .navigation ul li {
+    margin-left: 40px;
+}
+
+.site-header .navigation ul li a {
+    color: blue;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    
+}
+.contact-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.title {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #0056b3;
+}
+
+.contact-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.info-cards {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.card {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 45%;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    color: #0056b3;
+}
+
+
+.whatsapp-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s;
+}
+
+.whatsapp-card:hover {
+    transform: scale(1.05);
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.info h2 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.info p {
+    color: #666;
+    margin: 5px 0 15px;
+}
+
+.whatsapp-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #25d366;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.whatsapp-button img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.whatsapp-button:hover {
+    background-color: #1da851;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 75%;
+    
+}
+
+.contact-form label {
+    font-weight: bold;
+    text-align: right;
+    font-size: 20px;
+    text-align: right;
+    color: #0056b3;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact-form textarea {
+    resize: none;
+    height: 100px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.btn.primary {
+    background-color: #0056b3;
+    color: #fff;
+}
+
+.btn.secondary {
+    background-color: #0056b3;
+    color: #fff;
+}
+.site-footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #000;
+    color: #fff;
+    margin-top: 20px;
+    font-size: 18px;
+    height: auto;
+    max-height: 1600px;
+    width: 100%;
+    
+}
+.site-footer a{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px;
+}
+
+.icons a{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px;
+}
+.site-footer p{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px;
+}
+.fp{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: oblique;
+    font-size: 7px;
+    font-weight: 700;
+}
+
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="logo"><img src="" alt=""></div>
+        <nav class="navigation">
+            <ul>
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="traing.html"> المنصة التدريبية</a></li>
+                <li><a href="news.html">شريكنا الإعلامي</a></li>
+                <li><a href="guide.html">شريكنا السياحي </a></li>
+                
+            </ul>
+        </nav>
+    </header>
+    <div class="contact-container">
+        
+        <img src="Images/singup/singub1.png" alt="صورة تعبيرية" class="contact-image">
+
+        <div class="info-cards">
+            <div class="card">
+                <h3>رقم الهاتف</h3>
+                <p>+123 456 789</p>
+            </div>
+            <div class="card">
+                <h3>البريد الإلكتروني</h3>
+                <p>example@platform.com</p>
+            </div>
+        </div>
+        <center>
+            <div class="whatsapp-card">
+                <img src="https://img.freepik.com/premium-vector/whatsapp-icon-design_985790-55.jpg?semt=ais_hybrid" alt="User Avatar" class="avatar">
+                <div class="info">
+                    <h2>تواصل معنا عبر الواتساب </h2>
+                </div>
+                <a href="https://wa.me/009666558210742" target="_blank" class="whatsapp-button">
+                    <img src="https://img.freepik.com/premium-vector/whatsapp-icon-design_985790-55.jpg?semt=ais_hybrid" alt="WhatsApp">
+                     
+                </a>
+            </div>
+        </center>
+
+    <center>
+        <form class="contact-form">
+            <label for="name">الاسم</label>
+            <input type="text" id="name" name="name" placeholder="أدخل اسمك" required>
+
+            <label for="email">البريد الإلكتروني</label>
+            <input type="email" id="email" name="email" placeholder="example@domain.com" required>
+
+            <label for="password">كلمة المرور</label>
+            <input type="password" id="password" name="password" placeholder="أدخل كلمة المرور" required>
+
+            <label for="message">الرسالة</label>
+            <textarea id="message" name="message" placeholder="أدخل رسالتك هنا..." required></textarea>
+
+            <div class="buttons">
+                <button type="button" class="btn secondary">إرسال</button>
+            </div>
+        </form>
+    </center>
+    </div>
+    <footer class="site-footer">
+        <p>منصة نسق للخدمات . جميع الحقوق محفوظة . &copy; 2024</p>
+        <span>
+            <a href="#">من نحن</a>|
+            <a href="#">سياسة الخصوصية</a>|
+            <a href="#">الدعم</a>|
+            <a href="#">شروط الاستخدام</a>
+        </span> <br><br>
+            <span class="icons">
+               تابعونا علي :
+                <a href=""><i class="fa-brands fa-facebook"></i></a>|
+                <a href=""><i class="fa-brands fa-instagram"></i></a>|
+                <a href=""><i class="fa-brands fa-youtube"></i></a>|
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+            </span>
+       <p> إشترك في نشرتنا الإخبارية :</p>
+       <button>إشترك</button>
+       <input type="email" placeholder="ادخل بريدك الالكتروني">
+       <p class="fp">Desinged by Sultan</p>
+    </footer>
+</body>
+</html>
